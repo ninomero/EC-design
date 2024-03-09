@@ -1,4 +1,7 @@
 import React from "react";
+import styles from './HomePage.module.css';
+// 外部
+import { Link } from "react-router-dom";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,19 +13,19 @@ function HomePage() {
   return (
     <>
       {/* <!-- 流れるナビバー --> */}
-      <div class="site-container">
+      <div class={styles.site_container}>
         <div class="home-top-marquee marquee textsize-medium enable-animation">
           <ul class="marquee-content">
             <li>
-              <a href="#">
+              <Link to="/SampleMotion">
                 <b>
                   1111111111Lorem ipsum dolor sit amet consectetur, adipisicing
                   elit. Earum, tempore?
                 </b>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <a href="/">
                 <b>
                   22222222222Lorem ipsum dolor sit amet consectetur, adipisicing
                   elit. Earum, tempore?
@@ -30,7 +33,7 @@ function HomePage() {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/">
                 <b>
                   333333333333Lorem ipsum dolor sit amet consectetur,
                   adipisicing elit. Earum, tempore?
@@ -38,7 +41,7 @@ function HomePage() {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/">
                 <b>
                   44444444444Lorem ipsum dolor sit amet consectetur, adipisicing
                   elit. Earum, tempore?
@@ -58,7 +61,7 @@ function HomePage() {
             <ul>
               {/* <!-- MADEBYME --> */}
               <li>
-                {/* <a href="#">
+                {/* <a href="/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -71,7 +74,7 @@ function HomePage() {
                   </a> */}
               </li>
               <li>
-                {/* <a href="#">
+                {/* <a href="/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -84,7 +87,7 @@ function HomePage() {
                 </a> */}
               </li>
               <li>
-                {/* <a href="#">
+                {/* <a href="/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -98,7 +101,7 @@ function HomePage() {
                 </a> */}
               </li>
               <li>
-                {/* <a href="#">
+                {/* <a href="/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -129,7 +132,7 @@ function HomePage() {
                 <img src="./assets/forest.jpg" alt="" />
                 <div class="site-name">
                   <h2>Forest</h2>
-                  <a href="#">
+                  <a href="/">
                     <p>www.n-maru-studio/01_LUXCASUAL</p>
                   </a>
                 </div>
@@ -141,7 +144,7 @@ function HomePage() {
           <img src="./assets/lavender-field.jpg" alt="" />
           <div class="site-name">
             <h2>Lavender Field</h2>
-            <a href="#">
+            <a href="/">
               <p>www.n-maru-studio/Lavender Field</p>
             </a>
           </div>
@@ -150,7 +153,7 @@ function HomePage() {
           <img src="./assets/wooden-bridge.jpg" alt="" />
           <div class="site-name">
             <h2>Forest</h2>
-            <a href="#">
+            <a href="/">
               <p>www.n-maru-studio/Wooden Bridge</p>
             </a>
           </div>
@@ -159,7 +162,7 @@ function HomePage() {
           <img src="assets/snow-scenery.jpg" alt="" />
           <div class="site-name">
             <h2>Mountains</h2>
-            <a href="#">
+            <a href="/">
               <p>www.n-maru-studio/Mountains</p>
             </a>
           </div>
@@ -184,7 +187,7 @@ function HomePage() {
               </ul>
             </div>
             <div class="sub-contents-search">
-              <a href="#">
+              <a href="/">
                 <p>SEE ALL..</p>
               </a>
             </div>
@@ -224,7 +227,7 @@ function HomePage() {
               </ul>
             </div>
             <div class="sub-contents-search">
-              <a href="#">
+              <a href="/">
                 <p>SEE ALL..</p>
               </a>
             </div>
@@ -264,7 +267,7 @@ function HomePage() {
               </ul>
             </div>
             <div class="sub-contents-search">
-              <a href="#">
+              <a href="/">
                 <p>SEE ALL..</p>
               </a>
             </div>
@@ -279,14 +282,14 @@ function HomePage() {
             <div class="sub-contents-list">
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <p>01_WebopyLearn</p>
                   </a>
                 </li>
               </ul>
             </div>
             <div class="sub-contents-search">
-              <a href="#">
+              <a href="/">
                 <p>SEE ALL..</p>
               </a>
             </div>
@@ -299,30 +302,30 @@ function HomePage() {
         <div class="footer-contents">
           <nav class="footer-nav">
             <div class="footer-nav-contents">
-              <a href="#">Contact</a>
+              <a href="/">Contact</a>
             </div>
             <div class="footer-nav-contents">
-              <a href="#">Shipping & Return</a>
+              <a href="/">Shipping & Return</a>
             </div>
             <div class="footer-nav-contents">
-              <a href="#">FAQ</a>
+              <a href="/">FAQ</a>
             </div>
             <div class="footer-nav-contents">
-              <a href="#">Careers</a>
+              <a href="/">Careers</a>
             </div>
           </nav>
           <nav class="footer-nav">
             <div class="footer-nav-contents">
-              <a href="#">Terms & Conditions</a>
+              <a href="/">Terms & Conditions</a>
             </div>
             <div class="footer-nav-contents">
-              <a href="#">Privacy Policy</a>
+              <a href="/">Privacy Policy</a>
             </div>
             <div class="footer-nav-contents">
-              <a href="#">Cookie Policy</a>
+              <a href="/">Cookie Policy</a>
             </div>
             <div class="footer-nav-contents">
-              <a href="#">Cookie Settings</a>
+              <a href="/">Cookie Settings</a>
             </div>
           </nav>
           <div class="right-footer">
